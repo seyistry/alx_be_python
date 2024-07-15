@@ -3,14 +3,14 @@
 class Book:
     _is_checked_out = False
 
-    def __init__(self, title, author) -> None:
+    def __init__(self, title, author):
         self.title = title
         self.author = author
 
     def check_out(self):
         self._is_checked_out = True
 
-    def returned(self):
+    def return_book(self):
         self._is_checked_out = False
 
     def book_status(self):
