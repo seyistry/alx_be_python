@@ -18,10 +18,9 @@ class Book:
 
 
 class Library():
-    _books = []
 
     def __init__(self):
-        pass
+        self._books = []
 
     def add_book(self, books):
         self._books.append(books)
@@ -34,7 +33,7 @@ class Library():
     def return_book(self, title):
         for book in self._books:
             if book.title == title:
-                book.returned()
+                book.return_book()
 
     def list_available_books(self):
         for book in self._books:
